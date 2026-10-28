@@ -43,7 +43,7 @@ function Select({ value, options, onChange, icon, className }: {
 }
 
 export function TopBar() {
-  const [portfolio, setPortfolio] = useState(portfolios[0]);
+  const [portfolio, setPortfolio] = useState<string>(portfolios[0] ?? "");
   const [period, setPeriod] = useState("Aug 2026");
   const [comparison, setComparison] = useState("Jul 2026");
 
